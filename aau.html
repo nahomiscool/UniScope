@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AAU Programs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>AAU Programs</h1>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Search programs..." onkeyup="filterPrograms()">
+    <!-- Undergraduate Programs Section -->
+    <section class="subject-section">
+        <h2>Undergraduate Programs</h2>
+        <div class="grid">
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Agricultural Economics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Biology</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Chemistry</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Civil Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Computer Science</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Economics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Electrical and Computer Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Environmental Science</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Geography and Environmental Studies</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">History</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Law</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Mechanical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Mathematics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Medicine</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Nursing</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Political Science</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Public Health</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Sociology</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Statistics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Veterinary Medicine</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graduate Programs Section -->
+    <section class="subject-section">
+        <h2>Graduate Programs</h2>
+        <div class="grid">
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Master of Arts (M.A.)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Master of Science (M.Sc.)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Master of Business Administration (MBA)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Master of Education (M.Ed.)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Master of Law (LL.M)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Doctor of Philosophy (Ph.D.)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Specialty and Sub-specialty Certificates in Medicine</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AAU Library | <a href="#">Contact Us</a> | <a href="#">Help</a></p>
+    </footer>
+    <script>
+        function filterPrograms() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let programButtons = document.querySelectorAll('.program-button');
+    
+            programButtons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(input)) {
+                    button.parentElement.style.display = "";
+                } else {
+                    button.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

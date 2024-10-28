@@ -1,0 +1,212 @@
+/* Navigation Bar */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(88, 46, 22, 0.8);
+    background-image: url('background.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 5px #333;
+}
+
+/* Book Collection Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Read Button */
+.read-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5A8DEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-button:hover {
+    background-color: #3A6FDB;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #5A8DEE;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Subject Section Styling */
+.subject-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+}
+
+.subject-section h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Book Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+/* University Selection Page */
+.university-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.university {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.university:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Program Button Styling */
+.program-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5A8DEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.program-button:hover {
+    background-color: #3A6FDB;
+}
+
+/* General Page Structure for Subject Sections */
+.subject-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+}
+
+.subject-section h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #00509E;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.university {
+    background-color: #EEE;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.program-button, .rating span {
+    background-color: #00509E;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+    margin: 0.2em;
+    border-radius: 5px;
+}
+
+/* Rating */
+.rating span {
+    font-size: 1.5em;
+}

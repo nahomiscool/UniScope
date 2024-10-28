@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASTU Programs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>ASTU Programs</h1>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Search programs..." onkeyup="filterPrograms()">
+    <!-- Undergraduate Programs Section -->
+    <section class="subject-section">
+        <h2>Undergraduate Programs</h2>
+        <div class="grid">
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Applied Biology</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Applied Chemistry</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Applied Geology</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Applied Mathematics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Applied Physics</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Industrial Chemistry</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Pharmacy</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Computer Science and Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Electronics and Communication Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Electrical Power and Control Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Software Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Architecture</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Civil Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Construction Technology and Management</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Urban Planning and Design</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Geomatics Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Water Resources Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Chemical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Material Science and Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Mechanical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Mechanical Design and Manufacturing Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Mechanical Systems and Vehicle Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Thermal and Aerospace Engineering</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graduate Programs Section -->
+    <section class="subject-section">
+        <h2>Graduate Programs</h2>
+        <div class="grid">
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Business Administration (MBA)</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Computer Science</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Electrical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Civil Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Mechanical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Chemical Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Material Science and Engineering</button>
+            </div>
+            <div class="book">
+                <button class="program-button" onclick="window.location.href='#'">Masters in Public Health</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ASTU Library | <a href="#">Contact Us</a> | <a href="#">Help</a></p>
+    </footer>
+    <script>
+        function filterPrograms() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let programButtons = document.querySelectorAll('.program-button');
+            programButtons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(input)) {
+                    button.parentElement.style.display = "";
+                }else {
+                    button.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

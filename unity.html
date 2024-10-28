@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>University Books Library</h1>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Search programs..." onkeyup="filterPrograms()">
+    <!-- Science Section -->
+    <section class="subject-section">
+        <h2>Science</h2>
+        <div class="grid">
+            <div class="book">
+                <div class="img-container">
+                    <img src="/lawyer.jpg" alt="Biology Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Biology</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="chemistry.jpg" alt="Chemistry Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Chemistry</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="physics.jpg" alt="Physics Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Physics</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="mathematics.jpg" alt="Mathematics Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Mathematics</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Studies Section -->
+    <section class="subject-section">
+        <h2>Social Studies</h2>
+        <div class="grid">
+            <div class="book">
+                <div class="img-container">
+                    <img src="history.jpg" alt="History Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read History</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="civics.jpg" alt="Civics Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Civics</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="geography.jpg" alt="Geography Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Geography</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Arts and Humanities Section -->
+    <section class="subject-section">
+        <h2>Arts and Humanities</h2>
+        <div class="grid">
+            <div class="book">
+                <div class="img-container">
+                    <img src="amharic.jpg" alt="Amharic Literature Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Amharic Literature</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="english.jpg" alt="English Literature Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read English Literature</button>
+            </div>
+            <div class="book">
+                <div class="img-container">
+                    <img src="ethiopian_art.jpg" alt="Ethiopian Art Book Cover">
+                </div>
+                <button class="read-button" onclick="window.open('#')">Read Ethiopian Art</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 University Library | <a href="#">Contact Us</a> | <a href="#">Help</a></p>
+    </footer>
+    <script>
+        function filterPrograms() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let programButtons = document.querySelectorAll('.program-button');
+    
+            programButtons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(input)) {
+                    button.parentElement.style.display = "";
+                } else {
+                    button.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
