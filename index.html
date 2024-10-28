@@ -9,9 +9,11 @@
     <nav>
         <h1>Select Your University</h1>
     </nav>
+    <input type="text" id="searchInput" placeholder="Search programs..." onkeyup="filterPrograms()">
     <section class="university-selection">
+        <!-- Existing universities -->
         <div class="university" onclick="window.location.href='astu.html'">
-            <h2> Adama Science and Technology University (ASTU)</h2>
+            <h2>Adama Science and Technology University (ASTU)</h2>
         </div>
         <div class="university" onclick="window.location.href='unity.html'">
             <h2>Unity University</h2>
@@ -19,7 +21,186 @@
         <div class="university" onclick="window.location.href='aau.html'">
             <h2>Addis Ababa University (AAU)</h2>
         </div>
-        <!-- Add more universities as needed -->
+        <div class="university" onclick="window.location.href='hawassa.html'">
+            <h2>Hawassa University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='jimma.html'">
+            <h2>Jimma University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='mekele.html'">
+            <h2>Mekele University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='arsi.html'">
+            <h2>Arsi University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='haramaya.html'">
+            <h2>Haramaya University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='arba_minch.html'">
+            <h2>Arba Minch University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='bahir_dar.html'">
+            <h2>Bahir Dar University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='dire_dawa.html'">
+            <h2>Dire Dawa University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='debre_markos.html'">
+            <h2>Debre Markos University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='debre_birhan.html'">
+            <h2>Debre Birhan University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='ambo.html'">
+            <h2>Ambo University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='dilla.html'">
+            <h2>Dilla University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='aksum.html'">
+            <h2>Aksum University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='wollega.html'">
+            <h2>Wollega University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='wolaita_sodo.html'">
+            <h2>Wolaita Sodo University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='mizan_tepi.html'">
+            <h2>Mizan-Tepi University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='samara.html'">
+            <h2>Samara University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='adigrat.html'">
+            <h2>Adigrat University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='admas.html'">
+            <h2>Admas University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='rift_valley.html'">
+            <h2>Rift Valley University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='st_marys.html'">
+            <h2>St. Mary's University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='gondar.html'">
+            <h2>University of Gondar</h2>
+        </div>
+        <div class="university" onclick="window.location.href='debre_tabor.html'">
+            <h2>Debre Tabor University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='madda_walabu.html'">
+            <h2>Madda Walabu University</h2>
+        </div>
+    
+        <!-- Additional universities from provided list -->
+        <div class="university" onclick="window.location.href='gambella.html'">
+            <h2>Gambella University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='adama_university.html'">
+            <h2>Adama University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='aastu.html'">
+            <h2>Addis Ababa Science and Technology University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='addis_college.html'">
+            <h2>Addis College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='addis_commercial.html'">
+            <h2>Addis Ababa Commercial College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='aciph.html'">
+            <h2>Addis Continental Institute of Public Health</h2>
+        </div>
+        <div class="university" onclick="window.location.href='alkan_health.html'">
+            <h2>ALKAN Health Science Business and Technology College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='bits_college.html'">
+            <h2>BITS College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='bule_hora.html'">
+            <h2>Bule Hora University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='city_university.html'">
+            <h2>City University College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='closys_college.html'">
+            <h2>Closys College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='dandii_boruu.html'">
+            <h2>Dandii Boruu College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='defence_university.html'">
+            <h2>Defence University College of Engineering</h2>
+        </div>
+        <div class="university" onclick="window.location.href='dembi_dolo.html'">
+            <h2>Dembi Dolo University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='dessie_teachers.html'">
+            <h2>Dessie Teacher's Education College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='ethiopian_catholic.html'">
+            <h2>Ethiopian Catholic University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='civil_service.html'">
+            <h2>Ethiopian Civil Service University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='gambella.html'">
+            <h2>Gambella University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='grace_college.html'">
+            <h2>Grace College of Business and Computer Science</h2>
+        </div>
+        <div class="university" onclick="window.location.href='infonet.html'">
+            <h2>Infonet College</h2>
+        </div>    
+        <div class="university" onclick="window.location.href='intern_leadership.html'">
+            <h2>International Leadership Institute</h2>
+        </div>
+        <div class="university" onclick="window.location.href='jethro_leadership.html'">
+            <h2>Jethro Leadership & Management Institute</h2>
+        </div>
+        <div class="university" onclick="window.location.href='jinka.html'">
+            <h2>Jinka University</h2>
+        </div>
+        <div class="university" onclick="window.location.href='mekelle_tech.html'">
+            <h2>Mekelle Institute of Technology</h2>
+        </div>
+        <div class="university" onclick="window.location.href='new_generation.html'">
+            <h2>New Generation University College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='pesc.html'">
+            <h2>PESC Information Systems College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='royal.html'">
+            <h2>Royal College/Ethiopia</h2>
+        </div>
+        <div class="university" onclick="window.location.href='st_paul.html'">
+            <h2>St. Paul's Hospital Millennium Medical College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='urban_planning.html'">
+            <h2>Urban Planning College (Ecole)</h2>
+        </div>
+        <div class="university" onclick="window.location.href='washera.html'">
+            <h2>Washera College</h2>
+        </div>
+        <div class="university" onclick="window.location.href='wachemo.html'">
+            <h2>Wachemo University</h2>
+        </div>
     </section>
+    <script>
+        function filterPrograms() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let programButtons = document.querySelectorAll('h2');
+            programButtons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(input)) {
+                    button.parentElement.style.display = "";
+                }else {
+                    button.parentElement.style.display = "none";
+                }
+            });
+        }        
+    </script>
 </body>
 </html>
